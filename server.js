@@ -15,13 +15,16 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 // db Mongo
-var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/workout"
+mongoose.connect(
+  process.env.MONGODB_URI || 'mongodb://localhost/workout',
+  {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+    useCreateIndex: true,
+    useFindAndModify: false
+  }
+);
 
-mongoose.connect(MONGODB_URI,{
-  useNewUrlParser: true,
-  useFindAndModify: false,
-  useUnifiedTopology: true,
-});
 
 // Routes
 app.use(require("./routes/apiRoutes.js"));
