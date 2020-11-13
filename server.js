@@ -4,7 +4,7 @@ const mongoose = require("mongoose");
 const morgan = require("morgan"); // logs all request to the console
 
 // Sets up Express App
-const PORT = process.env.PORT || 4000;
+const PORT = process.env.PORT || 3000;
 const app = express();
 
 app.use(morgan("dev"));
@@ -19,7 +19,8 @@ var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/workout"
 
 mongoose.connect(MONGODB_URI,{
   useNewUrlParser: true,
-  useFindAndModify: false
+  useFindAndModify: false,
+  useUnifiedTopology: true,
 });
 
 // Routes
