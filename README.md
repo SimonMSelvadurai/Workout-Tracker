@@ -8,6 +8,10 @@ Output
 
 Deployed App: https://intense-plateau-37992.herokuapp.com/
 
-Screenshot:
-![Workout Tacker]()
+
+## Workout Tracker Scrteenshot
+![Workout Tacker](https://github.com/plrobbins/Workout-Tracker/blob/main/public/Images/Workout%20Tracker.png)
+
+## Workout Dashboard Screenshot
+![Workout Dashboard](https://github.com/plrobbins/Workout-Tracker/blob/main/public/Images/Workout%20Dashboard.png)
 
